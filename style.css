@@ -31,14 +31,11 @@ body {
   border: #dcdcdc;
   margin-top: 10px;
   margin-left: 10px;
+  padding: 0 5px;
 }
 .text {
   margin: 28px 0;
 }
-.expense-field input {
-  padding: 0 5px;
-}
-
 /* button style */
 
 .expense-btn {
@@ -49,4 +46,21 @@ body {
   border: none;
   line-height: 31px;
   padding: 0 27px;
+}
+.saving-input-field {
+  width: 132px;
+  background-color: #dcdcdc;
+  outline: none;
+  border: #dcdcdc;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+.savings {
+  margin-top: 16px;
+  font-weight: 500;
+}
+.save-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
 }

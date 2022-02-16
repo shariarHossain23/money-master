@@ -34,19 +34,37 @@ document.getElementById("calculate-btn").addEventListener("click",function(){
     
     // clear display
     document.getElementById("error-text").innerText = "";
-    document.getElementById("expense-money").innerText = "";
-    document.getElementById("total-balance").innerText = "";
-    // clear input field
-    document.getElementById("income-money").value = "";
-    document.getElementById('food-money').value = "";
-    document.getElementById('rent-money').value = "";
-    document.getElementById('cloth-money').value = "";
+    // document.getElementById("expense-money").innerText = "0";
+    // document.getElementById("total-balance").innerText = "0";
+    // // clear input field
+    // document.getElementById("income-money").value = "0";
+    // document.getElementById('food-money').value = "0";
+    // document.getElementById('rent-money').value = "0";
+    // document.getElementById('cloth-money').value = "0";
   
 }
 
 })
 
 
+
+document.getElementById("saving-btn").addEventListener("click",function(){
+    const incomeMoney = inputField("income");
+    const savingMoneyInput = inputField("saving");
+    const totalBalance = document.getElementById("total-balance").innerText;
+    if(savingMoneyInput < 0 || isNaN(savingMoneyInput)|| savingMoneyInput == ""){
+        alert("hi")
+    }
+    else{
+        const savingBalance =  ((parseFloat(savingMoneyInput)/ 100) * parseFloat(incomeMoney));
+        const remainingMoney = parseFloat(totalBalance) - savingBalance;
+        console.log(remainingMoney)
+
+        // showing display
+        document.getElementById("save-money").innerText = savingBalance;
+        document.getElementById("remaining-balance").innerText= remainingMoney;
+    }
+})
 function inputField(id){
 
     return document.getElementById(id+"-money").value;
