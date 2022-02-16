@@ -9,3 +9,44 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* header style */
+.expense-header {
+  color: #31a5ac;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+/* --------------------------
+      style expense master
+--------------------------- */
+.expense-text {
+  position: relative;
+  top: 24px;
+  margin-top: 39px;
+}
+.expense-field input {
+  background-color: #dcdcdc;
+  outline: none;
+  border: #dcdcdc;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.text {
+  margin: 28px 0;
+}
+.expense-field input {
+  padding: 0 5px;
+}
+
+/* button style */
+
+.expense-btn {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #59a5ff;
+  border: none;
+  line-height: 31px;
+  padding: 0 27px;
+}

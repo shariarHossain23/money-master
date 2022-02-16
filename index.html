@@ -13,9 +13,63 @@
     />
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
-    <title>Money Master</title>
+    <title>Expense Master</title>
   </head>
   <body>
+    <!-- header of expense master -->
+    <header>
+      <div class="expense-header text-center">
+        <h2>Expense Master</h2>
+      </div>
+    </header>
+
+    <!-- expense master -->
+    <section>
+      <div class="container">
+        <div class="row mt-4 d-flex align-items-center">
+          <div class="col-md-6 col-sm-12">
+            <div class="expense-master-left">
+              <img class="img-fluid" src="./images/dollar.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form action="#">
+              <div class="text-center">
+                <h5 class="mb-3">Income</h5>
+                <div
+                  class="expenses d-flex align-items-center justify-content-center"
+                >
+                  <div ">
+                    <p class="">Income:</p>
+                    <div class="expense-text">
+                      <p class=" text">Food:</p>
+                      <p class=" text">Rent:</p>
+                      <p class=" text">Cloth:</p>
+                    </div>
+                  </div>
+                  <div class="expense-field">
+                    <p><input type="text" value="10000"/></p>
+                    <h5>Expense</h5>
+                    <div>
+                      <p><input type="text" value="3000" /></p>
+                      <p><input type="text"  value="2000"/></p>
+                      <p><input type="text" value="500"/></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="text-center">
+                <button class="expense-btn">Calculate</button>
+            </div>
+            <div class="text-center mt-4">
+                <h5>Total Expense :<span>5500</span></h5>
+                <h5>Balance :<span>5500</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- link javascript -->
     <script src="./app.js"></script>
   </body>

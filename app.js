@@ -1,1 +1,1 @@
-console.log("link js")
+document.getElementById("")
