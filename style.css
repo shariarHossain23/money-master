@@ -20,6 +20,13 @@ body {
 /* --------------------------
       style expense master
 --------------------------- */
+.expense-master-left img {
+  height: 80vh;
+}
+.expense-right {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
 .expense-text {
   position: relative;
   top: 24px;

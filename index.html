@@ -26,7 +26,7 @@
     <!-- expense master -->
     <section>
       <div class="container">
-        <div class="row mt-4 d-flex align-items-center">
+        <div class="row mt-4 d-flex align-items-center expense-right gy-4">
           <div class="col-md-6 col-sm-12">
             <div class="expense-master-left">
               <img class="img-fluid" src="./images/dollar.jpg" alt="" />
@@ -50,24 +50,29 @@
                   </div>
                   <!-- expense input field -->
                   <div class="expense-field">
-                    <p><input id="income-money" type="text" value="10000" /></p>
+                    <p><input id="income-money" type="text" value="" /></p>
                     <h5>Expense</h5>
                     <div>
-                      <p><input id="food-money" type="text" value="3000" /></p>
-                      <p><input id="rent-money" type="text" value="2000" /></p>
-                      <p><input id="cloth-money" type="text" value="500" /></p>
+                      <p><input id="food-money" type="text" value="" /></p>
+                      <p><input id="rent-money" type="text" value="" /></p>
+                      <p><input id="cloth-money" type="text" value="" /></p>
                     </div>
                   </div>
                 </div>
               </div>
             </form>
             <div class="text-center">
+              <small
+                id="expense-field-text"
+                class="d-block text-danger mb-4"
+              ></small>
               <button id="calculate-btn" class="expense-btn">Calculate</button>
             </div>
             <div class="text-center mt-4">
-              <p id="error-text" class="text-danger fs-3"></p>
-              <h5>Total Expense :<span id="expense-money">5500</span></h5>
-              <h5>Balance :<span id="total-balance">4500</span></h5>
+              <p id="error-text-input" class="text-danger fs-4"></p>
+              <h5>Total Expense :<span id="expense-money">0</span></h5>
+              <h5>Balance :<span id="total-balance">0</span></h5>
+              <p id="error-text-balance" class="text-danger"></p>
             </div>
             <!-- saving -->
             <div>
@@ -79,16 +84,16 @@
                   id="saving-money"
                   class="saving-input-field"
                   type="text"
-                  value="20"
                 />
                 <small class="save-icon">%</small>
                 <button id="saving-btn" class="expense-btn">save</button>
               </div>
+              <p id="input-text" class="text-danger text-center"></p>
               <div class="text-center mt-4">
-                <h5>Saving Amount:<span id="save-money">2000</span></h5>
-                <h5>
-                  Remaining Balance:<span id="remaining-balance">2500</span>
-                </h5>
+                <p id="saving-error" class="text-danger"></p>
+                <h5>Saving Amount:<span id="save-money">0</span></h5>
+                <h5>Remaining Balance:<span id="remaining-balance">0</span></h5>
+                <p id="saving-text" class="text-danger mt-3"></p>
               </div>
             </div>
           </div>
