@@ -79,17 +79,10 @@ function getExpenseMoney(){
     document.getElementById("expense-money").innerText = totalExpenseMoney;
 
     // clear display = 
-    clearInputField()
     document.getElementById("expense-field-text").innerText = "";
     }
 }
 
-//  clear input value
-function clearInputField(){
-    document.getElementById("food-money").value = "";
-    document.getElementById("rent-money").value = "";
-    document.getElementById("cloth-money").value = "";
-}
 
 // calculate total balance
 function getTotalBalance(balance){
